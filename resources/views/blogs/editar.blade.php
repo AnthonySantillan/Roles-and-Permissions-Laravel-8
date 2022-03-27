@@ -30,6 +30,12 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
+                                   <label for="user.id">Usuario</label>
+                                   <input type="text" name="user.id" class="form-control" value="{{ $blog->user_id }}">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
                                    <label for="titulo">Título</label>
                                    <input type="text" name="titulo" class="form-control" value="{{ $blog->titulo }}">
                                 </div>

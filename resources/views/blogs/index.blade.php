@@ -19,14 +19,18 @@
                         <table class="table table-striped mt-2">
                                 <thead style="background-color:#6777ef">                                     
                                     <th style="display: none;">ID</th>
+                                    <th style="color:#fff;">Usuario</th>
                                     <th style="color:#fff;">Titulo</th>
                                     <th style="color:#fff;">Contenido</th>                                    
                                     <th style="color:#fff;">Acciones</th>                                                                   
                               </thead>
                               <tbody>
                             @foreach ($blogs as $blog)
+                            @foreach ($users as $user)
+
                             <tr>
-                                <td style="display: none;">{{ $blog->id }}</td>                                
+                                <td style="display: none;">{{ $blog->id }}</td> 
+                                <td>{{ $user->name }}</td>
                                 <td>{{ $blog->titulo }}</td>
                                 <td>{{ $blog->contenido }}</td>
                                 <td>
@@ -43,6 +47,7 @@
                                     </form>
                                 </td>
                             </tr>
+                            @endforeach
                             @endforeach
                             </tbody>
                         </table>

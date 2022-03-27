@@ -32,6 +32,14 @@
                                    <input type="text" name="titulo" class="form-control">
                                 </div>
                             </div>
+                            {{-- @foreach ($blog as $blogs)
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                   <label for="user_id">User</label>
+                                   <input type="text" name="user_id" class="form-control" value="{{$blog->id}}">
+                                </div>
+                            </div>
+                            @endforeach --}}
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                     
                                 <div class="form-floating">

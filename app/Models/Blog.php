@@ -12,4 +12,12 @@ class Blog extends Model
         'titulo',
         'contenido'
     ];
+    function users()
+    {
+        return $this->hasMany(User::class);
+    }
+    function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
